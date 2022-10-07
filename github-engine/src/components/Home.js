@@ -14,8 +14,8 @@ function Home({ users, loading }) {
 
         <div className="row">
           {users.map((user, i) => (
-            <div className="side">
-              <img src={user.avatar_url} height={200} alt="Profile Pic"></img>
+            <div className="side" key={i}>
+              <img src={user.avatar_url} height={200} alt="ProfilePic"></img>
               <h2>{user.login}</h2>
               <div className="profile-button">
                 <div className="a">
