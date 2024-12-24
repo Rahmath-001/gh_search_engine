@@ -1,0 +1,138 @@
+.user-details-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .user-card {
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .user-card h2 {
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .user-card p {
+    color: black;
+  }
+
+
+  
+  .avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+  }
+  
+  .details {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .profile-link {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  .repos-section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+  }
+  
+  .repos-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .repo-item {
+    margin-bottom: 35px;
+
+  }
+  
+  .repo-item a {
+    font-size: 16px;
+    font-weight: bold;
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .repo-item p {
+    font-size: 14px;
+    color: #555;
+    text-align: left;
+    padding: 0%;
+  }
+  
+  .load-more-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #0073e6;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .load-more-button:hover {
+    background-color: #005bb5;
+  }
+  
+  .back-button {
+    margin-top: 20px;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #555;
+    color: #fff;
+    border-radius: 5px;
+  }
+  
+  .back-button:hover {
+    background-color: #333;
+  }
+
+  .repos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+
+.repo-card {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .repo-card h4 {
+    margin: 0 0 10px;
+  }
+  
+  .repo-card a {
+    text-decoration: none;
+    color: #0073e6;
+  }
+  
+  .repo-card p {
+    font-size: 0.9em;
+    color: #555;
+  }

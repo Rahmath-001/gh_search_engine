@@ -1,13 +1,17 @@
 import {useState} from 'react';
 
-
-
-function Header() {
+function Header({fetchUsers}) {
   
     const [username,setUsername]= useState("")
     const onChangeHandler = (e)=>{
-        setUsername(e.target.value)
+        const query = e.target.value;
+        setUsername(query);
+        fetchUsers(query);
     }
+    const clearSearch = () => {
+        setUsername("");
+        fetchUsers(""); 
+      };
   
     return (
     <>
@@ -16,8 +20,7 @@ function Header() {
                 <input type="text" name="username" onChange={onChangeHandler} placeholder="Search Users" />
             </form>
             <div style={{ marginTop:"2%" }}>
-                <button>Submit</button><br/><br/>
-                <button>Clear</button>
+                <button type='button' onClick={clearSearch} >Clear</button>
             </div>
 
         </div>
