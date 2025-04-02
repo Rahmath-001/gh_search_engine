@@ -1,7 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 
 .profile-button {
   background-color: rgb(0, 210, 251);
-  padding: 20px;
+  padding: 12px;
   border-radius: 5px;
   text-decoration: none;
 }
@@ -12,18 +17,15 @@
   text-decoration: none;
 }
 
-.a a{
-  text-decoration: none;
+.user-name {
+  font-size: 25px;
+  font-weight: 600;
 }
 
 .profile-button:hover {
   background-color: rgb(18, 236, 247) ;
 }
 
-.a:hover {
-  /* text-size-adjust: 10%; */
-  color: rgb(222, 210, 210);
-}
 
 
 
@@ -111,12 +113,10 @@ button {
   padding: 20px;
 }
 
-/* Fake image, just for this example */
-.fakeimg {
-  background-color: #aaa;
-  width: 100%;
-  padding: 20px;
+img {
+  height: 250px;
 }
+
 
 /* Footer */
 .footer {
@@ -132,8 +132,7 @@ button {
   text-align: center;
 }
 
-.navbar i,
-p {
+.navbar i {
   text-align: center;
   color: white;
   padding: 8px;
@@ -148,6 +147,7 @@ p {
 input[type="text"] {
   width: 90%;
   font-size: large;
+  color: black;
 }
 button {
   width: 30%;

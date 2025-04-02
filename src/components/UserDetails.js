@@ -47,9 +47,12 @@ function UserDetails({loading}) {
 </center>
 <div className="user-details-container">
       <div className="user-card">
+        <div className="user-img">
         <img src={userDetails.avatar_url} alt={`${userDetails.login} Avatar`} className="avatar" />
+        </div>
         <h2>{userDetails.name || userDetails.login}</h2>
-        <p>{userDetails.bio || "No bio available."}</p>
+        <h4>Companies:</h4>
+        <p>{userDetails.company || "No Companies."}</p>
         <div className="details">
           <p>Followers: {userDetails.followers}</p>
           <p>Following: {userDetails.following}</p>

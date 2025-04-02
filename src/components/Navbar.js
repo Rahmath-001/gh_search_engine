@@ -8,11 +8,10 @@ function Navbar () {
         <>
           <div className='navbar'>
           <i className="fa-brands fa-square-github fa-3x"></i>
-    <Link to='/'>Github Search Engine</Link> 
-    <Link to='/'>Contact Us</Link> 
-    <Link to='/'>About Us</Link> 
-
-    </div>
+          <Link to='/'>Github Search Engine</Link> 
+          <Link to='/contact-us'>Contact Us</Link> 
+          <Link to='/about-us'>About Us</Link> 
+          </div>
         </>
 
     )

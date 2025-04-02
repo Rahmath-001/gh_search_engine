@@ -15,13 +15,19 @@ function Home({ users, loading, fetchUsers }) {
         <div className="row">
           {users.map((user, i) => (
             <div className="side" key={i}>
+              <div className="user-img"> 
               <img src={user.avatar_url} height={200} style={{borderRadius:'30px'}} alt="ProfilePic"></img>
+              </div>
+              <div className="user-name">
               <h2>{user.login}</h2>
+              </div>
+              <Link to={`/user/${user.login}`}>
               <div className="profile-button">
                 <div className="a">
-                  <Link to={`/user/${user.login}`}>Check Profile</Link>
+                  Check Profile
                 </div>
               </div>
+              </Link>
               <br />
             </div>
           ))}

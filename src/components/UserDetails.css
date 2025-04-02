@@ -20,6 +20,7 @@
     border-radius: 10px;
     margin-bottom: 30px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-weight: 600;
   }
 
   .user-card p {
@@ -33,6 +34,11 @@
     height: 150px;
     border-radius: 50%;
     margin-bottom: 15px;
+  }
+
+  .user-img{
+    display: flex;
+    justify-content: center;
   }
   
   .details {

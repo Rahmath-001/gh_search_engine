@@ -17,7 +17,7 @@ function Header({fetchUsers}) {
     <>
     <div className="header">
             <form>
-                <input type="text" name="username" onChange={onChangeHandler} placeholder="Search Users" />
+                <input type="text" name="username" value={username}  onChange={onChangeHandler} placeholder="Search Users" />
             </form>
             <div style={{ marginTop:"2%" }}>
                 <button type='button' onClick={clearSearch} >Clear</button>

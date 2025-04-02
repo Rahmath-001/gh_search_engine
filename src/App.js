@@ -11,6 +11,8 @@ import {
 } from "react-router-dom";
 
 import { useState, useEffect } from "react";
+import Aboutus from "./components/Aboutus";
+import Contactus from "./components/Contactus";
 
 function App() {
   const [users, setUsers] = useState([]);
@@ -61,6 +63,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home users={users} loading={loading} fetchUsers={fetchUsers} />} />
         <Route path="/user/:username"  element={<UserDetails loading={loading}  />} />
+        <Route path="/about-us" element={<Aboutus/>} />
+        <Route path="/contact-us" element={<Contactus/>} />
       </Routes>
       <Footer />
     </>
